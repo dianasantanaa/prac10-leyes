@@ -1,0 +1,87 @@
+<!DOCTYPE html><!--informa al navegdor que version de HTML se ocupa-->
+<html lang="en"><!--se utiliza para comenzar a estructurar y el idioma-->
+<head><!--información general acerca del documento, incluyendo su título y
+    enlaces a scripts y hojas de estilos-->
+    <meta charset="UTF-8"><!--responsable de que se muestre el contenido correctamente y con caracteres-->
+    <!-- metaetiqueta mediante la que se establece si se puede hacer zoom en una página, el zoom inicial o 
+        la anchura de la pantalla del dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ley de Coulomb</title><!--agregamos el titulo-->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  /><!--link de boostrap-->
+</head><!--cerramos lo principal-->
+<body><!--comenzamos con el cuerpoo-->
+            <div class="rounded container border border-warning"><!--contenedor principal-->
+                <h2>2DA LEY DE NEWTON <br> <!--titulo--> 
+                    LEY DE ACELERACIÓN:</h2>
+                <form action="" id="resistencia"><!--hacemos un formulario-->
+                    <label for="voltaje">Valor de masa: </label><br /><!--agregamos inficione-->
+                    <input
+                    type="number"
+                    placeholder="solo valores numericos"
+                    id="masa"
+                    required
+                    /><br /><!--lo que se nrequiere llenar-->
+                    <br>
+                    <label for="corriente">Valor de aceleracion: </label><!--agregamos inficione-->
+                    <input
+                    type="number"
+                    placeholder="solo valores numericos"
+                    id="aceleracion"
+                    required
+                    /><br /><!--lo que se nrequiere llenar-->
+                    <label for="resultado" id="lblResultado">...</label><!--agregamos inficione-->
+                    <br /><!--agregamos un boton-->
+                    <input
+                    type="button"
+                    value="Calcular"
+                    class="btn-warning"
+                    onclick="calcularResistencia()"/>
+                </form>
+                <br />
+            </div>
+            <br />
+            <div class="rounded container border border-warning">
+                <h2>2DA LEY DE NEWTON <br>  
+                    LEY DE FUERZA:</h2>
+                <form action="" id="resistencia">
+        
+                    <label for="voltaje">Valor de fuerza: </label><br />
+                    <input
+                    type="number"
+                    placeholder="solo valores numericos"
+                    id="fuerza"
+                    required
+                    /><br />
+                    <br>
+                    <label for="corriente">Valor de masa: </label>
+                    <input
+                    type="number"
+                    placeholder="solo valores numericos"
+                    id="masa"
+                    required
+                    /><br />
+                    <label for="resultado" id="lblResultado">...</label>
+                    <br />
+                    <input
+                    type="button"
+                    value="Calcular"
+                    class="btn-warning"
+                    onclick="calcularnewton()"/>
+                </form>
+                <br />
+            </div>
+            <br />
+
+
+            <script src="../scrip/newton.js"></script>
+       
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+</body><!--se termina lo que ira dentro de la pagina web-->
+</html><!--fin de la estructura-->

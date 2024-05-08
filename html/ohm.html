@@ -1,0 +1,110 @@
+ <!DOCTYPE html><!--informa al navegdor que version de HTML se ocupa-->
+ <html lang="en"><!--se utiliza para comenzar a estructurar y el idioma-->
+ <head><!--información general acerca del documento, incluyendo su título y
+     enlaces a scripts y hojas de estilos--> 
+    <meta charset="UTF-8"><!--responsable de que se muestre el contenido correctamente y con caracteres-->
+    <!-- metaetiqueta mediante la que se establece si se puede hacer zoom en una página, el zoom inicial o 
+        la anchura de la pantalla del dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ley de ohm</title><!--agregamos el titulo-->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  /><!--agregamos el link de bootstrap-->
+</head><!--cerramos lo principal-->
+<body><!--comenzamos con el cuerpoo-->
+    <div class="rounded container border border-warning"><!--contenedor principal-->
+        <h2>Calcular Resistencia:</h2><!--titulo-->
+        <form action="" id="resistencia"><!--hacemos un formulario-->
+            <label for="corriente">valor de la Corriente</label><!--agregamos inficione-->
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="corriente"
+            required
+            /><br /><br /><!--lo que se nrequiere llenar-->
+            <label for="voltaje">Valor del voltaje</label><br /><!--agregamos inficione-->
+            <input
+            type="number"
+            placeholder="solo valores numericos"
+            id="voltaje"
+            required
+            /><br /><!--lo que se nrequiere llenar-->
+            <label for="resultado" id="lblResultado">...</label><!--agregamos inficione-->
+            <br /><!--agregamos un boton con las funciones-->
+            <input
+            type="button"
+            value="Calcular"
+            class="btn-warning"
+            onclick="calcularResistencia()"/>
+        </form>
+        <br />
+    </div>
+    <br />
+    
+
+
+
+<!-- codigo de corriente -->
+<div class="rounded container border border-warning">
+    <h2>Calcular Corriente:</h2>
+    <form action="" id="current">
+        <label for="voltajeCurr">Valor del Voltaje</label>
+        <input
+        type="number"
+        placeholder="solo valores numericos"
+        id="voltajeCurr"
+        required
+        /><br /><br />
+        <label for="resistenciaCurr">Valor de la Resistencia</label><br />
+        <input
+        type="number"
+        placeholder="solo valores numericos"
+        id="resistenciaCurr"
+        required
+        /><br />
+        <label for="Resultado" id="lblCurrResultado">...</label>
+        <br />
+        <input
+        type="button"
+        value="Calcular"
+        class="btn-warning"
+        onclick="calcularCorriente()"
+        />
+    </form>
+    <br />
+</div>
+<br />
+<!-- codigo de voltaje -->
+<div class="rounded container border border-primary">
+    <h2>Calcular Voltaje:</h2>
+    <form action="" id="voltaje">
+        <label for="corrienteVolt">Valor de la Corriente</label>
+        <input
+        type="number"
+        placeholder="solo valores numericos"
+        id="corrienteVolt"
+        required
+        /><br /><br />
+        <label for="resistenciaVolt">Valor del Voltaje</label><br />
+        <input
+        type="number"
+        placeholder="solo valores numericos"
+        id="resistenciaVolt"
+        required
+        /><br />
+        <label for="resultado" id="lblVoltResultado">...</label>
+        <br />
+        <input
+        type="button"
+        value="Calcular"
+        class="btn-info"
+        onclick="calcularVoltaje()"
+        />
+    </form>
+    <br />
+</div>
+<br />
+    <script src="../scrip/ohm.js"></script>
+</body><!--se termina lo que ira dentro de la pagina web-->
+</html><!--fin de la estructura-->
